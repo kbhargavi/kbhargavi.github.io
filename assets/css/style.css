@@ -169,6 +169,58 @@ a.portfolio-link {
 
 /* Project Section */
 .portfolio-grid {
+  text-align: center;
+  border-top: 2px solid #e1e6ea;
+  font-size: 0; /* removes gaps between divs */
+  line-height: 0; /* removes gaps between divs */
+}
+
+.portfolio-grid .project {
+  position: relative;
+  display: inline-block;
+  background-size: 638px 437px;
+  background-repeat: no-repeat;
+  width: 638px;
+  height: 437px;
+  text-decoration: none;
+}
+
+.portfolio-grid .project .hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(249,73,38,0.8);
+  color: #fff;
+  opacity: 0;
+}
+
+.portfolio-grid .project:hover .hover-info {
+  opacity: 1;
+}
+
+.portfolio-grid .project .hover-info p {
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.portfolio-grid .project .hover-info p.project-name {
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.portfolio-grid .project .hover-info p.divider {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.portfolio-grid .project .hover-info p.project-details {
+  font-family: serif;
+  font-weight: 200;
+  font-size: 30px;
 }
 
 
